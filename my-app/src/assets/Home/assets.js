@@ -21,7 +21,7 @@ import planting_icon from './planting_icon.png'
 import quality_control_icon from './quality_control_icon.png'
 import search_icon from './search_icon.png'
 import side_frame1 from './side_frame1.png'
-import side_frame2 from './side_frame2.png'
+import Side_frame2 from './Side_frame2.png'
 import upload_area from './upload_area.png'
 import Smith_English from './Smith_English.svg'
 import Miller_English from './Miller_English.svg'
@@ -98,7 +98,7 @@ export const assets = {
     quality_control_icon,
     search_icon,
     side_frame1,
-    side_frame2,
+    Side_frame2,
     upload_area,
     Smith_English,
     Miller_English,
