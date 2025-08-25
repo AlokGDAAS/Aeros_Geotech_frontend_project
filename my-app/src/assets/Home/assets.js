@@ -53,8 +53,8 @@ import blog_image_3 from './blog_image_3.svg'
 import blog_image_4 from './blog_image_4.svg' 
 import drone_frame_4 from './drone_frame_4.svg' 
 import side_stick from './side_stick.svg'
-import vector_right from './vector_right.png'
-import vector_left from './vector_left.png'
+import vector_r from './vector_r.png'
+import vector_l from './vector_l.png'
 import miller_english_pic from './miller_english_pic.svg'
 import smith_english_pic from './smith_english_pic.svg'
 import garcia_spanish_pic from './garcia_spanish_pic.svg'
@@ -130,8 +130,8 @@ export const assets = {
     blog_image_4,
     drone_frame_4,
     side_stick,
-    vector_right,
-    vector_left,
+    vector_r,
+    vector_l,
     miller_english_pic,
     smith_english_pic,
     garcia_spanish_pic

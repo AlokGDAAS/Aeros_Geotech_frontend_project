@@ -1,5 +1,4 @@
 import React from 'react'
-import Carousal1 from '../utils/Carousal1'
 import HorizontalSlider from '../utils/HorizontalSlider'
 import { assets } from '../../assets/Home/assets'
 

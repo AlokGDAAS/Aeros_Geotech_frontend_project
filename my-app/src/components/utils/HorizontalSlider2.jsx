@@ -84,7 +84,7 @@ const HorizontalSlider2 = () => {
             <div>
                 <div onClick={prevSlide} style={{display:"flex", alignItems:"center" }}>
                   <div style={{}} className="vector-left">
-                     <img src={assets.vector_left} alt='' style={{padding:"15px"}}/>
+                     <img src={assets.vector_l} alt='' style={{padding:"15px"}}/>
                   </div>
                   
                 </div>
@@ -92,7 +92,7 @@ const HorizontalSlider2 = () => {
             <div>
                 <div onClick={nextSlide} style={{display:"flex", alignItems:"center" }}>
                   <div style={{}} className="vector-right">
-                     <img src={assets.vector_right} alt='' style={{padding:"15px"}}/>
+                     <img src={assets.vector_r} alt='' style={{padding:"15px"}}/>
                   </div>
                   
                 </div>

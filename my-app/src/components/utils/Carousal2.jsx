@@ -28,7 +28,7 @@ const Carousal2 = () => {
                 <div onClick={prevSlide} style={{display:"flex", alignItems:"center" }}>
                   
                   <div   style={{margin:"40%"}} className="vector-left">
-                     <img src={assets.vector_left} alt='' style={{padding:"15px"}}/>
+                     <img src={assets.vector_l} alt='' style={{padding:"15px"}}/>
                   </div>
                   
                 </div>
@@ -66,7 +66,7 @@ const Carousal2 = () => {
             <div>
                 <div onClick={nextSlide} style={{display:"flex", alignItems:"center" }}>
                   <div style={{margin:"40%"}} className="vector-right">
-                     <img src={assets.vector_right} alt='' style={{padding:"15px"}}/>
+                     <img src={assets.vector_r} alt='' style={{padding:"15px"}}/>
                   </div>
                   
                 </div>
