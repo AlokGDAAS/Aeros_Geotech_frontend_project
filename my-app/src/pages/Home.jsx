@@ -60,7 +60,6 @@ const Home = () => {
               facere sapiente quaerat quibusdam, cupiditate distinctio quisquam reprehenderit voluptas porro,
               libero aliquam hic nesciunt blanditiis. Totam aut labore officia fuga quisquam</p>
       </div>
-
     </div>
     <Home_frame_1/>
     <Home_frame2/>
