@@ -15,7 +15,7 @@ const Home = () => {
     <div className="flex max-h-[100vh] max-w-[100vw] bg-[url('/asset/background_1.png')] bg-cover bg-center px-1 relative">
       {/* Left Side Frame */}
       <div className="flex items-start">
-        <img src={assets.side_frame1} alt="Left Side Frame" className="h-[84vh]" />
+        <img src={assets.Side_frame1} alt="Left Side Frame" className="h-[84vh]" />
       </div>
 
       {/* Main Content */}
@@ -45,7 +45,7 @@ const Home = () => {
 
       {/* Right Side Frame */}
       <div className="flex items-start">
-        <img src={assets.side_frame1} alt="Right Side Frame" className="h-[84vh]" />
+        <img src={assets.Side_frame1} alt="Right Side Frame" className="h-[84vh]" />
       </div>
     </div>
     <div style={{position:"absolute", top:"65%", left:"10%"}}>
