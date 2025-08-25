@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import { assets } from "../assets/Home/assets";
+import { assets } from "../assets/Home_frontend/assets";
 import Home_frame_1 from "../components/Home_frames/Home_frame_1";
 import Home_frame2 from "../components/Home_frames/Home_frame2";
 import Home_frame_3 from "../components/Home_frames/Home_frame_3";

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
 import CaraoselCard from "./CaraoselCard";
-import { assets } from "../../assets/Home/assets";
+import { assets } from "../../assets/Home_frontend/assets";
 
 const items = [
   {

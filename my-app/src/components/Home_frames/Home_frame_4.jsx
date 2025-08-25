@@ -1,6 +1,4 @@
 import React from 'react'
-import { assets } from '../../assets/Home/assets'
-
 import Carousal2 from '../utils/Carousal2'
 
 const Home_frame_4 = () => {

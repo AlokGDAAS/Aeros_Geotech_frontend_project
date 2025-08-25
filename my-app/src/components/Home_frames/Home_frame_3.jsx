@@ -1,6 +1,6 @@
 import React from 'react'
 import HorizontalSlider from '../utils/HorizontalSlider'
-import { assets } from '../../assets/Home/assets'
+import { assets } from '../../assets/Home_frontend/assets'
 
 
 
