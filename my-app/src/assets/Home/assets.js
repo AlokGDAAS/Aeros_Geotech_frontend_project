@@ -11,7 +11,7 @@ import drone_1 from './drone_1.png'
 import dron_2 from './dron_2.png'
 import dron_3 from './dron_3.png'
 import experience_icon from './experience_icon.png'
-import layer_1 from './layer_1.png'
+import home_img from './home_img.png'
 import left_dotted_corner from './left_dotted_corner.png'
 import right_dotted_corner from './right_dotted_corner.png'
 import money_icon from './money_icon.png'
@@ -88,7 +88,7 @@ export const assets = {
     dron_4,
     dron_5,
     experience_icon,
-    layer_1,
+    home_img,
     left_dotted_corner,
     right_dotted_corner,
     money_icon,

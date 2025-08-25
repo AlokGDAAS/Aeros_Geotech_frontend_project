@@ -49,7 +49,7 @@ const Home = () => {
       </div>
     </div>
     <div style={{position:"absolute", top:"65%", left:"10%"}}>
-        <img src={assets.layer_1} alt=""/>
+        <img src={assets.home_img} alt=""/>
     </div>
     <div style={{position:"absolute", top:"65%", right:"10%",}}>
        <img src={assets.msg_box_1} alt=""/>
