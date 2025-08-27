@@ -63,11 +63,11 @@ const HorizontalSlider2 = () => {
       {/* Slider Container */}
       <div className="overflow-hidden">
         <div
-          className="flex transition-transform duration-700 ease-in-out"
+          className="flex transition-transform duration-700 ease-in-out gap-[1vw]"
           style={{ transform: `translateX(-${index * (100 / 4)}%)` }}
         >
           {items.map((item, i) => (
-            <div key={i} className="flex-shrink-0" style={{width:"23%"}}>
+            <div key={i} className="flex-shrink-0 mx-[0.5vw]" style={{width:"23%"}}>
               <CaraoselCard2
                 image={item.image}
                 date={item.date}

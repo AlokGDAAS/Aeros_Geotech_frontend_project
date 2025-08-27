@@ -28,8 +28,8 @@ const Home_frame2 = () => {
     paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Sit,facere sapiente quaerat quibusdam, cupiditate distinctio quisquam reprehenderit voluptas porro,"
   }
   return (
-    <div style={{position:"relative",background:"#111b22"}}>
-       <div style={{ display:"flex", gap:"2rem", color:"white", padding:"13vh 5vw" }}>
+    <div style={{position:"relative",background:"#111b22"}} className='py-[15vw] md:py-[0]'>
+       <div style={{  color:"white", }} className='grid-container p-13vw lg:py-[13vh] px-[10vw]'>
         <div>
            <AboutUsCards image={card1.image} heading={card1.heading} paragraph={card1.paragraph} />
         </div>
@@ -44,10 +44,10 @@ const Home_frame2 = () => {
         </div>
 
     </div>
-    <div style={{position:"absolute", bottom:"15%", right:"3.5%"}}>
+    <div style={{position:"absolute",}} className='bottom-[3%] right-[3.5%] md:bottom-[10%] md:right-[8%]'>
      <img src={assets.left_dotted_corner} alt=''/>
     </div>
-    <div style={{position:"absolute", top:"16%", left:"3.5%"}}>
+    <div style={{position:"absolute", }} className='top-[3%] left-[3.5%] md:top-[10%] md:left-[8%]'>
      <img src={assets.right_dotted_corner} alt='' />
     </div>
    </div> 

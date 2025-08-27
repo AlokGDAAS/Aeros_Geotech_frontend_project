@@ -2,9 +2,10 @@
 .App{
     font-family: "Barlow", sans-serif;
     font-style: normal;
+    color:#FFFFFF;
 }
-.navbar-ul > li {
-  font-size: 18px;
+.link{
+  font-size: clamp(14px,1.25vw,18px);
   font-weight: 400;
   line-break: 100%;
   letter-spacing: 0%;
@@ -13,22 +14,27 @@
  
 }
 
-.navbar-ul > li:hover {
+.link:hover {
  transform: translateY(-5px); /* 1.05 = 105% */
   
 }
 
-.footer li{
-    color:#E4E4E4;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0%;
-    padding-right: 4rem;
-    cursor: pointer;   
-
-
+.m-link {
+  display: block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #1e213a;       /* dark background */
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);  /* shadow effect */
+  transition: all 0.3s ease;
 }
+
+.m-link:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* stronger shadow on hover */
+  background: #2a2d4d; /* subtle hover bg */
+}
+
 
 .clients_card{
   display: flex;
@@ -41,26 +47,29 @@
 .home_frame_4_number{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 52px;
+    font-size: clamp(18px,3.6vw , 60px);
     line-height: 150%;
     letter-spacing: 0%;
     color:#08D7FC;
 }
-.home_frame_4_box{
-  position: relative;
-  padding-left: 40px; 
+.ab_frame_2_number{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color:#08D7FC;
+}
 
-}
-.home_frame_4_box::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;   /* stick width */
-  height: 107%;  /* full height */
-  background: url("./assets/Home/side_stick.svg") no-repeat center;
-  background-size: cover;
-}
+/* .ab_frame_2_box{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  gap: 2.2vw;
+  margin: 1vw 0rem;
+} */
+
+
+
 .vector-right{
   border: 0.5px solid #EA533D ;
   
@@ -83,6 +92,116 @@
 
 .vector-left:hover{
 background: linear-gradient(to left, #EBA435, #EA533D);
+}
+
+.border-boxes{
+
+  height:113px;
+  width: 113px;
+  background-color: #08D7FC;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-container-home-frame-4{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  gap: 2.2vw;
+  margin: 1vw 0rem;
+}
+
+/*  --------------- letter styles -------------------- */
+
+.hr1{
+  border: 0.2vw solid #08D7FC;
+  border-radius: 10px;
+  margin: 0.2vw auto;
+}
+
+.d-font-h{
+  font-size: clamp(14px ,1.2vw,48px );
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 16%;
+  color:#08D7FC
+}
+.d-font-d1{
+  font-size: clamp(24px ,3.33vw,48px );
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+
+.d-font-d2{
+  font-size: clamp(14px ,3.33vw,48px );
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color:#08D7FC
+}
+
+.d-font-p1{
+  font-size: clamp(14px ,1.38vw,40px );
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color:#C6C6C6
+}
+
+.d-font-p2{
+  font-size: clamp(14px , 2.22vw, 48px);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 1%;  
+}
+.d-font-card-h1{
+  font-size: clamp(14px ,1.38vw,48px );
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+.d-font-card-h2{
+  font-size: clamp(14px ,1.38vw,48px );
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+
+.d-font-card-p1{
+  font-size: clamp(12px ,1.11vw,48px );
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color:#C6C6C6
+}
+.d-font-card-p1-w{
+  font-size: clamp(12px ,1.11vw,48px );
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.d-font-card-p1-E4{
+  font-size: clamp(12px ,1.11vw,48px );
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #E4E4E4;
+ 
+}
+.d-font-card-more{
+  font-size: clamp(12px ,1.04vw,48px );
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #08D7FC;
 }
 
 

@@ -1,39 +1,35 @@
 import React from 'react'
 import HorizontalSlider from '../utils/HorizontalSlider'
 import { assets } from '../../assets/Home_frontend/assets'
+import Head_card from '../utils/Head_card'
 
 
 
 
 const Home_frame_3 = () => {
+
+  const cont = {
+    heading:"TESTIMONIAL",
+    des1:"What Client Say About",
+    des2:"Our Services",
+    para:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Sit,facere sapiente quaerat quibusdam, cupiditate distinctio quisquam reprehenderit voluptas porro,libero aliquam hic nesciunt blanditiis. Totam aut labore officia fuga quisquam"
+  }
   return (
     <div style={{background:"#0A192F",position:"relative"}}>
     <div style={{ display:"flex" , flexDirection:"column", gap:"4rem", justifyContent:"space-between", color:"white", padding:"13vh 1vw" }}>
          
-              <div  style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center",maxWidth:"80vw",margin:"0rem auto"}}>
-                <p style={{fontSize:"16px", fontWeight:"400", lineHeight:"150%" ,letterSpacing:"16%" ,color:"#08D7FC"}}>TESTIMONIAL</p>
-                <div className='flex gap-2 mb-2'>
-                      <p style={{fontSize:"48px", fontWeight:"400", lineHeight:"150%" ,letterSpacing:"0%"}}>What Client Say About </p>
-                      <div className='flex flex-col w-fit'>
-                        <p style={{fontSize:"48px", fontWeight:"600", lineHeight:"150%" ,letterSpacing:"0%" ,color:"#08D7FC"}}>Our Service</p>
-                        <hr style={{border:"2px solid #08D7FC", width:"6vw", margin:"3px auto", borderRadius:"10px" ,}}/>
-                        <hr style={{border:"2px solid #08D7FC", width:"10vw" ,margin:"3px auto",borderRadius:"10px"}}/>
-                       </div>
-                </div>     
-
-                <p style={{fontSize:"20px", fontWeight:"400", lineHeight:"150%" ,letterSpacing:"0%",textAlign:"center" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.Sit, 
-                  facere sapiente quaerat quibusdam, cupiditate distinctio quisquam reprehenderit voluptas porro,
-                  libero aliquam hic nesciunt blanditiis. Totam aut labore officia fuga quisquam.</p>
+              <div>
+                <Head_card heading={cont.heading} des1={cont.des1} des2={cont.des2} para={cont.para}/>
               </div>
 
-              <div>
+              <div className=' overflow-hidden'>
               <HorizontalSlider/>               
               </div>
             </div>
-                <div style={{position:"absolute", top:"37%", right:"2%"}}>
-                 <img src={assets.dron_4} alt=''/>
+                <div style={{position:"absolute", top:"37%", right:"2%",maxWidth:"20%"}} className='hidden md:block'>
+                 <img src={assets.dron_4} alt=''style={{}}/>
                 </div>
-                <div style={{position:"absolute", top:"8%", left:"2%"}}>
+                <div style={{position:"absolute", top:"8%", left:"2%",maxWidth:"20%"}}  className='hidden md:block'>
                  <img src={assets.dron_5} alt='' />
                 </div>
             </div>
