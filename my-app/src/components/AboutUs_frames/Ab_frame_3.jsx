@@ -14,8 +14,8 @@ const Ab_frame_3 = () => {
 
   return (
     <div>
-            <div style={{position:"relative"}}>
-    <div style={{ display:"flex" , flexDirection:"column", gap:"4rem", justifyContent:"space-between", background:"#111B22",color:"white", padding:"13vh 1vw" }}>
+            <div className='relative py-[8vw] md:py-[5vw] px-[5vw]'style={{background:"#111B22"}}>
+    <div style={{ display:"flex" , flexDirection:"column", gap:"4rem", justifyContent:"space-between",  }}>
          
 
 
@@ -27,8 +27,8 @@ const Ab_frame_3 = () => {
               </div>
                     
             </div>
-                  <div style={{position:"absolute", top:"5%", right:"5%"}}>
-                   <img src={assets.drone_frame_5} alt=''/>
+                  <div className='absolute md:top-[0] md:right-[0] top-[2vw] right-[1vw]'>
+                   <img src={assets.ab_frame_3_corner_drone_1} alt='' className='max-w-[20vw]'/>
                   </div>          
        </div> 
     </div>

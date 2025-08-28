@@ -3,12 +3,55 @@ import Carousal2 from '../utils/Carousal2'
 import { assets } from '../../assets/Home_frontend/assets'
 
 const Home_frame_4 = () => {
+      
+  const content = [
+    {
+      head:"25+",
+      desc1:"Years Experience",
+      
+    },
+    {
+      head:"375+",
+      desc1:"Completed Projects",
     
+    },
+    {
+      head:"99%",
+      desc1:"Positive Reviews",
+      
+    },
+    {
+      head:"120+",
+      desc1:"Expert Pilots",
+    
+    }
+
+  ]
   const images = [
     assets.home_drone,
     assets.home_drone,
     
   ]
+
+  
+    const Box = ({head,desc1})=>{
+      return(
+         <div>
+            <div className='flex max-h-[20vw]' >    
+  
+              <img src={assets.side_stick} alt=''/>
+               <div className='flex flex-col justify-between ml-[2vw]'>
+                 <p className='home_frame_4_number'>{head}</p>
+                 <div>
+                 <p className='ab-frame_2_desc'>{desc1}</p>
+               
+                 </div>
+               </div>
+               </div>
+         </div>
+  
+      )
+    }
 
 
   return (
@@ -20,40 +63,19 @@ const Home_frame_4 = () => {
           </div>
            
           {/* ------------------------------------------------- */}
-          <div style={{ justifyContent:"space-between",}} className='lg:flex grid-container-home-frame-4'>
-            <div className='max-h-[21vw] flex'>
-            <img src={assets.ab_side_stick} alt=''/>
-             <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", paddingLeft:"1.5rem"}} className='ab_frame_2_box' >
-               <p className='home_frame_4_number'>25+</p>
-               <p className='d-font-p1'>Years Experience</p>
-             </div>
-             </div>
+          <div>
+          <div className='flex flex-col md:flex-row md:flex-wrap gap-[2vw] '>
+            {
+              content.map((item,index)=>(
+                <div key={index} className='md:min-w-[20%]'>
 
-            <div className='max-h-[21vw] flex'>
-            <img src={assets.ab_side_stick} alt=''/>
-             <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", paddingLeft:"1.5rem"}} className='ab_frame_2_box' >
-               <p className='home_frame_4_number'>375+</p>
-               <p  className='d-font-p1'>Completed Projects</p>
-             </div>
-             </div>
+                  <Box head={item.head} desc1={item.desc1}/>
 
-            <div className='max-h-[21vw] flex'>
-            <img src={assets.ab_side_stick} alt=''/>
-             <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", paddingLeft:"1.5rem"}} className='ab_frame_2_box' >
-               <p className='home_frame_4_number'>99%</p>
-               <p  className='d-font-p1'>Positive Reviews</p>
-             </div>
-             </div>
-
-            <div className='max-h-[21vw] flex'>
-            <img src={assets.ab_side_stick} alt='' />
-             <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", paddingLeft:"1.5rem"}} className='ab_frame_2_box' >
-               <p className='home_frame_4_number'>120+</p>
-               <p  className='d-font-p1'>Expert Pilots</p>
-             </div>
-             </div>
-             <div></div>
-
+                </div>
+              ))
+            }
+         
+          </div>               
           </div>
       </div>
 

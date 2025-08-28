@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { assets } from "../../assets/Home_frontend/assets";
+import { VscTriangleRight } from "react-icons/vsc";
+import { VscTriangleLeft } from "react-icons/vsc";
 
 
 
@@ -22,7 +24,7 @@ const AB_Carousel3_frame_8 = ({images}) => {
 
             </div>
             {/* ---drone---- */}
-            <div className="mx-auto overflow-hidden" style={{maxWidth:"410px"}}>
+            <div className="mx-auto max-w-[29vw] w-full overflow-hidden">
                 <div 
                   className="flex transition-transform ease-out duration-500"
                   style={{ transform: `translateX(-${current * 100}%)` }}
@@ -32,7 +34,7 @@ const AB_Carousel3_frame_8 = ({images}) => {
                       key={index}
                       src={src}
                       alt={`slide-${index}`}
-                      className="min-w-[410px]"
+                      className="min-w-[23.47vw]  m-[3vw]"
                     />
                   ))}
                 </div> 
@@ -44,17 +46,17 @@ const AB_Carousel3_frame_8 = ({images}) => {
 
           </div>
 
-          <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+          <div className="flex flex-col md:flex-row justify-center md:justify-between items-center">
 
-            <div>
-                 <div style={{display:"flex",justifyContent:"center",alignItems:"center" ,height:"18vh", gap:"1rem"}}>
+            <div className="flex justify-center items-center ">
+                 <div className="">
 
                     {images.map((_, i) => (
                       <button
                         key={i}
                         onClick={() => setCurrent(i)}
-                        style={ i === current ? {backgroundColor:"#08D7FC" ,width:"32px"}:{backgroundColor:"#ffffff7e"}}
-                        className="h-3 w-3 rounded-full transition-all duration-300"
+                        style={ i === current ? {backgroundColor:"#08D7FC" ,width:"2vw"}:{backgroundColor:"#ffffff7e"}}
+                        className="min-h-[7px] min-w-[7px] rounded-full transition-all duration-300 ml-[0.5vw]"
                       />
                     ))}
                  </div>
@@ -66,16 +68,16 @@ const AB_Carousel3_frame_8 = ({images}) => {
                   {/* ---button left---- */}
                 <div onClick={prevSlide} style={{display:"flex", alignItems:"center" }}>
                   
-                  <div   style={{}} className="vector-left">
-                     <img src={assets.vector_l} alt='' style={{padding:"15px"}}/>
+                  <div className="vector-left-frame-8 p-[1.05vw]">
+                       <VscTriangleLeft className=""/>
                   </div>
                   
                 </div>
                              {/* ---button right---- */}
             <div>
                 <div onClick={nextSlide} style={{display:"flex", alignItems:"center" }}>
-                  <div style={{}} className="vector-right">
-                     <img src={assets.vector_r} alt='' style={{padding:"15px"}}/>
+                  <div style={{}} className="vector-right-frame-8  p-[1.05vw]">
+                     <VscTriangleRight/>
                   </div>
                   
                 </div>

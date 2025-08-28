@@ -1,15 +1,13 @@
-import React from 'react'
-import { assets } from '../../assets/Home_frontend/assets'
+import React from "react";
+import { assets } from "../../assets/Home_frontend/assets";
 
 const Ab_frame_4 = () => {
   return (
-    <div style={{padding:"100px 72px",backgroundColor:"#141E25"}}>
-        <div style={{display:"flex", justifyContent:"space-between"}}>
-
-            {/*-------------------------------Left section ------------------------------ */}
-            <div className='flex items-center'>
-              <div>
-            <p className='d-font-h'>CRETIFICATIONS</p>
+    <div className="bg-[ #111b22d7]">
+       <div className="flex py-[6.94vw] px-[5vw] justify-between" >
+        <div className="flex ">
+        <div  style={{display:"flex", flexDirection:"column", justifyContent:"center",maxWidth:"80vw",margin:"0 auto"}}>
+            <p className='d-font-h'>Certifications</p>
             <div className='flex flex-col md:flex-row gap-2 mb-[2vw] items-center'>
                 <p className='d-font-d1  md:pb-[1.5vw]'>All</p>
                 <div className='flex flex-col w-fit'>
@@ -17,23 +15,24 @@ const Ab_frame_4 = () => {
                     <hr style={{width:"6vw"}} className='hr1'/>
                     <hr style={{width:"10vw"}}  className='hr1'/>
                 </div>
-            </div>  
-              <div style={{padding:"1vw 0rem"}}>
-                <img src={assets.ab_frame_4_readmore} alt=''className='hover:scale-105 transition-all duration-300'/>
-              </div>                
-              </div>
+            </div>     
 
-            </div>
-            {/*-------------------------------Right section ------------------------------ */}
-            <div className='relative'>
-                <img src={assets.ab_frame_4_img} alt='' style={{zIndex:"5"}}/>
-                <img src={assets.left_dotted_corner} alt='' style={{position:"absolute" ,bottom:"1.5%",right:"1.5%", zIndex:"1"}}/>
-                <img src={assets.right_dotted_corner} alt=''style={{position:"absolute",top:"1.5%",left:"1.25%", zIndex:"2"}}/>
-            </div>
-
+           <img src={assets.ab_frame_4_readmore} alt="" className="max-w-[12.72vw]"/>
+        </div>          
         </div>
-    </div>
-  )
-}
 
-export default Ab_frame_4
+
+
+
+        <div>
+          <img src={assets.ab_frame_4_img} alt="" className="max-w-[38.37vw]"/>
+        </div>
+
+
+        
+       </div>
+    </div>
+  );
+};
+
+export default Ab_frame_4;

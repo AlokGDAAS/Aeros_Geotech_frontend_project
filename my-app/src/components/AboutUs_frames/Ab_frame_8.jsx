@@ -21,23 +21,25 @@ const Ab_frame_8 = () => {
    ]
 
   return (
-    <div style={{backgroundColor:"#111B22",color:"#FFFFFF"}}>
+    <div style={{backgroundColor:"#111B22"}}>
         <div>
               <div className='pt-[4vw] pb-[1vw]'>
                 <Head_card heading={cont.heading} des1={cont.des1} des2={cont.des2} para={cont.para}/>
               </div>
         </div>
 
-    <div className='bg-[url(/asset/ab_frame_8_bg.svg)] bg-cover bg-center' style={{display:"grid", gridTemplateColumns:"1fr 1fr"}}>
-        <div></div>
-        <div style={{backgroundColor:"#1A2731", width:"44vw", padding:"40px",borderRadius:"20px" }} className='my-20'>
-            <div style={{display:"flex", justifyContent:"space-between"}}>
-                <p style={{fontSize:"36px", fontWeight:"500", lineHeight:"150%", letterSpacing:"0%"}}>DJI Agras t20</p>
-                <img src={assets.ab_frame_8_more} alt=''/>
+    <div className='bg-[url(/asset/ab_frame_8_bg.svg)] bg-cover bg-center flex flex-row'>
+        <div className='w-1/2'></div>
+        <div>
+        <div style={{backgroundColor:"#1A2731",borderRadius:"20px" }} className='my-20 p-[2.7vw]'>
+            <div className='flex justify-between flex-col md:flex-row items-center'>
+                <p className='d-font-p3'>DJI Agras t20</p>
+                <img src={assets.ab_frame_8_more} alt='' className='max-w-[10.55vw] mt-[4vw] md:mt-0'/>
             </div>
             <div>
                 <AB_Carousel3_frame_8 images={images}/>
             </div>
+        </div>
         </div>
     </div>
     </div>

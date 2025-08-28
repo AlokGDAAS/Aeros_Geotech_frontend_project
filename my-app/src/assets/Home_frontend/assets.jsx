@@ -64,6 +64,9 @@ import dron_5 from './dron_5.svg'
 import ab_about_us_img from './ab_about_us_img.svg'
 import ab_drone_1 from './ab_drone_1.svg'
 import ab_drone_2 from './ab_drone_2.svg'
+import ab_frame_2_corner_drone_1 from './ab_frame_2_corner_drone_1.svg'
+import ab_frame_2_corner_drone_2 from './ab_frame_2_corner_drone_2.svg'
+import ab_frame_3_corner_drone_1 from './ab_frame_3_corner_drone_1.svg'
 import ab_frame_3_img_1 from './ab_frame_3_img_1.svg'
 import ab_frame_3_img_2 from './ab_frame_3_img_2.svg'
 import ab_frame_3_img_3 from './ab_frame_3_img_3.svg'
@@ -186,5 +189,8 @@ export const assets = {
     ab_frame_8_drone_1,
     ab_frame_8_drone_2,
     ab_frame_8_more,
+    ab_frame_2_corner_drone_1,
+    ab_frame_2_corner_drone_2,
+    ab_frame_3_corner_drone_1
     
 }

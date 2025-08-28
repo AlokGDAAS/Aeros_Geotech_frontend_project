@@ -9,7 +9,7 @@ const NavBar = () => {
   const closeMenu = () => setIsMenu(false);
 
   return (
-    <div className="px-6 md:px-12 mx-auto w-[95vw] flex justify-between py-2 h-[9vh] items-center relative text-white">
+    <div className="px-6 md:px-12 mx-auto w-[95vw] flex justify-between py-2 h-[9vh] items-center relative text-white hidden">
       
       {/* Logo */}
       <div>
