@@ -29,7 +29,7 @@ const Home_test = () => {
           {/* banner */}
           <div className="flex justify-center relative ">
           <img src={assets.banner_1} alt="Banner" className="md:max-w-[61vw]" />
-          <img src={assets.banner_1_circle} alt="" className="absolute md:right-[23%] md:top-[14%] md:w-[10%] right-[7%] w-[17%]"/>
+          <img src={assets.banner_1_circle} alt="" className="absolute md:right-[23%] md:top-[14%] md:w-[10%] right-[5%] top-[15%] w-[15%]"/>
           </div>
 
 
