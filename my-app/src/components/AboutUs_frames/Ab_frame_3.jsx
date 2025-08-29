@@ -19,7 +19,7 @@ const Ab_frame_3 = () => {
          
 
 
-              <div>
+              <div className='pt-[9vh] md:pt-0'>
                  <Head_card heading={cont.heading} des1={cont.des1} des2={cont.des2} para={cont.para}/>    
               </div>
               <div className='overflow-hidden'>
@@ -27,8 +27,8 @@ const Ab_frame_3 = () => {
               </div>
                     
             </div>
-                  <div className='absolute md:top-[0] md:right-[0] top-[2vw] right-[1vw]'>
-                   <img src={assets.ab_frame_3_corner_drone_1} alt='' className='max-w-[20vw]'/>
+                  <div className='absolute md:top-[0] md:right-[0] top-[4vh] right-[36vw]'>
+                   <img src={assets.ab_frame_3_corner_drone_1} alt='' className='max-w-[25vw]'/>
                   </div>          
        </div> 
     </div>

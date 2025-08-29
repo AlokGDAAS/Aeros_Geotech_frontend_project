@@ -88,7 +88,7 @@
 }
 .ab_frame_2_desc{   
     font-weight: 400;
-    font-size: clamp(12px ,1.38vw,28px);
+    font-size: clamp(8px ,1.38vw,28px);
     line-height: 150%;
     letter-spacing: 0%;
     color:#08D7FC;

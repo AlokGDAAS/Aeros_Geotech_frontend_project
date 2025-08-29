@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel3 from '../utils/Carousel3'
 import { assets } from '../../assets/Home_frontend/assets';
 import Ab_frame_7_carousel from '../utils/Ab_frame_7_carousel';
+import Ab_frame_8_touch_slider from '../utils/Ab_frame_8_touch_slider';
 
 const Ab_frame_7 = () => {
 
@@ -31,8 +32,13 @@ const Ab_frame_7 = () => {
 
   
         <div>
-        <div className=''>
+        <div className='py-[6vh] md:py-0'>
+                   <div className='hidden md:block '>
                     <Ab_frame_7_carousel images={images}/>
+                    </div>
+                    <div className='md:hidden'>
+                      <Ab_frame_8_touch_slider images={images} />
+                    </div>
         </div>           
         </div>
 

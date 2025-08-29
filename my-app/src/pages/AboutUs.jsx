@@ -19,7 +19,7 @@ const AboutUs = () => {
   return (
     <div>
         <Ab_frame_1/>
-         <Ab_frame_2/>
+        <Ab_frame_2/>
         <Ab_frame_3/>
         <Ab_frame_4/>
         <Ab_frame_5/>

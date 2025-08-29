@@ -46,9 +46,9 @@ const Ab_frame_2 = () => {
   const Box = ({head,desc1,desc2})=>{
     return(
        <div>
-          <div className='flex max-h-[20vw]' >    
-
-            <img src={assets.ab_side_stick} alt=''/>
+          <div className='flex  md:max-h-[20vw]' >    
+           
+            <img src={assets.ab_side_stick} alt='' className='h-full'/>
              <div className='flex flex-col justify-between ml-[1vw]'>
                <p className='ab_frame_2_number'>{head}</p>
                <div>
@@ -62,7 +62,7 @@ const Ab_frame_2 = () => {
     )
   }
   return (
-    <div style={{backgroundColor:"#141D24"}} className='relative py-[2vw] md:py-[5vw] px-[5vw]'>
+    <div style={{backgroundColor:"#141D24"}} className='relative py-[2vw] md:py-[5vw] px-[5vw] pb-[10vh] md:pb-0'>
         <div  style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center",maxWidth:"80vw",margin:"4rem auto", color:"#C6C6C6"}}>
             <p style={{padding:"1rem 2rem"}} className='d-font-h'>KEY POINTS</p>     
 
@@ -81,10 +81,10 @@ const Ab_frame_2 = () => {
           </div>
            
           {/* ------------------------------------------------- */}
-          <div className='flex flex-col md:flex-row md:flex-wrap gap-[2vw] mt-[8vw]'>
+          <div className='md:flex md:flex-row md:flex-wrap md:gap-[2vw] gap-[10vh] mt-[8vw] grid grid-cols-2'>
             {
               content.map((item,index)=>(
-                <div key={index} className='md:min-w-[31%]'>
+                <div key={index} className='md:min-w-[31%] '>
 
                   <Box head={item.head} desc1={item.desc1} desc2={item.desc2}/>
 
@@ -94,11 +94,11 @@ const Ab_frame_2 = () => {
          
           </div>
       </div>
-      <div className='absolute md:top-[0] md:left-[0]  top-[2vw] left-[1vw]   '>
-        <img src={assets.ab_frame_2_corner_drone_1} alt='' className='max-w-[20vw]'/ >
+      <div className='absolute md:top-[0] md:left-[0]  top-[4vh] left-[2vh]   '>
+        <img src={assets.ab_frame_2_corner_drone_1} alt='' className='max-w-[25vw]'/ >
       </div>
-      <div className='absolute md:top-[0] md:right-[0] top-[2vw] right-[1vw]'>
-        <img src={assets.ab_frame_2_corner_drone_2} alt='' className='max-w-[20vw]'/ >
+      <div className='absolute md:top-[0] md:right-[0] top-[4vh] right-[2vh]'>
+        <img src={assets.ab_frame_2_corner_drone_2} alt='' className='max-w-[25vw]'/ >
       </div>
     </div>
   )
