@@ -3,13 +3,15 @@ import { assets } from '../assets/Home_frontend/assets'
 import { Link } from 'react-router-dom'
 import { IoMenu, IoClose } from "react-icons/io5";
 
+import { MdMenu } from 'react-icons/md';
+
 const NavBar = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   const closeMenu = () => setIsMenu(false);
 
   return (
-    <div className="px-6 md:px-12 mx-auto w-[95vw] flex justify-between py-2 h-[9vh] items-center relative text-white hidden">
+    <div className="px-6 md:px-12 mx-auto w-[95vw] flex justify-between py-2 h-[9vh] items-center relative text-white backdrop-blur-sm ">
       
       {/* Logo */}
       <div>
@@ -31,22 +33,28 @@ const NavBar = () => {
       </ul>
 
       {/* Contact Image (desktop only) */}
-      <div className="hidden md:block cursor-pointer">
+      <div className=" cursor-pointer flex md:block gap-[2vh]">
+        <div className='w-full'>
         <img 
           src={assets.contact_pic} 
           alt="Contact" 
-          className="hover:scale-105 duration-300 w-[12vw]" 
+          className="hover:scale-105 duration-300 md:w-[12vw] min-w-[9vw] w-[30vw]" 
         />
+        </div>
+      {/* Mobile Menu Toggle */}
+      <div className=''>
+      <div onClick={() => setIsMenu(prev => !prev)} className="md:hidden cursor-pointer z-50 border p-[0.1rem] rounded-lg   flex items-center">
+        <MdMenu  size={30} className='text-white'/> 
+
+      </div>  
+      </div>
+      
       </div>
 
-      {/* Mobile Menu Toggle */}
-      <div onClick={() => setIsMenu(prev => !prev)} className="md:hidden cursor-pointer z-50">
-        {isMenu ? <IoClose size={30} /> : <IoMenu size={30} />}
-      </div>
 
       {/* Mobile Menu Drawer */}
       {isMenu && (
-        <div className="absolute top-[9vh] right-0 w-2/5 bg-[#17192eff] p-6 flex flex-col gap-5 md:hidden z-40 rounded-lg shadow-lg">
+        <div className="absolute top-[9vh] right-0 w-[60vw] bg-[#17192eff] p-6 flex flex-col gap-5 md:hidden z-40 rounded-lg shadow-lg">
           <Link to="/" onClick={closeMenu} className="cursor-pointer m-link">Home</Link>
           <Link to="/product" onClick={closeMenu} className="cursor-pointer m-link">Product</Link>
           <Link to="/drone" onClick={closeMenu} className="cursor-pointer m-link">Drone as Service</Link>

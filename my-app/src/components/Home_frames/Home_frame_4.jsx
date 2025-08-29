@@ -1,6 +1,6 @@
 import React from 'react'
-import Carousal2 from '../utils/Carousal2'
 import { assets } from '../../assets/Home_frontend/assets'
+import Home_frame_4_caraosel from '../utils/Home_frame_4_caraosel'
 
 const Home_frame_4 = () => {
       
@@ -55,11 +55,11 @@ const Home_frame_4 = () => {
 
 
   return (
-    <div className="bg-[url('/asset/backround_2.svg')] bg-cover bg-center " style={{backgroundColor:"#111B22",padding:"7vw 5vw",color:"#FFFFFF"}}>
-      <div>
+    <div className="bg-[url('/asset/backround_2.svg')] bg-cover bg-center py-[7vw]  px-[5vw]" style={{backgroundColor:"#111B22"}}>
+      <div className=''>
         {/* ------------------------------------------------- */}
-          <div className='max-w-[95vw] mt-[10vw]'>
-                <Carousal2 images={images}/>
+          <div className=''>
+                <Home_frame_4_caraosel images={images}/>
           </div>
            
           {/* ------------------------------------------------- */}

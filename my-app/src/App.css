@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .App{
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow";
     font-style: normal;
     color:#FFFFFF;
     background-color: black;
@@ -37,14 +37,36 @@
 }
 
 
-.clients_card{
+.clients_card > div{
+
+  padding: 2.3rem;
+  
+ 
+}
+
+.clients_card > div>img{
+
+  max-width: 34vw;
+}
+
+
+@media (min-width: 768px){
+  .clients_card > div{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  width: 30vw;
-  height: 21vh;
+  padding: 2.7vw;
+
+  
 }
+  .clients_card > div>img{
+
+  min-width: 9vw;
+}
+
+
+}
+
 .home_frame_4_number{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -143,6 +165,10 @@ background-color:#08D7FC;
   margin: 1vw 0rem;
 }
 
+.point>div>ul>li{
+  cursor: pointer;
+}
+
 /*  --------------- letter styles -------------------- */
 
 .hr1{
@@ -209,6 +235,13 @@ background-color:#08D7FC;
   line-height: 150%;
   letter-spacing: 0%;
 
+}
+.d-font-card-h2-E4{
+  font-size: clamp(14px ,1.38vw,48px );
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #E4E4E4;
 }
 .d-font-card-h3{
   font-size: clamp(14px ,1.38vw,48px );

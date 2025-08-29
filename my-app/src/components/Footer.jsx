@@ -12,7 +12,7 @@ const Footer = () => {
        <div style={{gridTemplateColumns:"2fr 3fr", margin:"0px auto"}} className='flex flex-col md:grid'>
 
          {/* ----------------------------------Input Box-------------------------------- */}
-        <div style={{display:"flex", flexDirection:"column"}}>
+        <div className='flex flex-col items-center md:items-start'>
             <div>
                <img src={assets.nav_icon_1} alt='' />
             </div>
@@ -31,28 +31,28 @@ const Footer = () => {
             </div>
         </div>
 
-      <div className='flex  md:flex-row gap-2 justify-between mt-[4vw]'>
+      <div className='flex flex-col md:flex-row gap-2 md:justify-between mt-[4vw] items-center text-center md:text-start point'>
    {/* ----------------------------------Contact-------------------------------- */}     
-        <div className='max-w-1/4'>
+        <div className='md:max-w-1/4 '>
    
-           <ul style={{display:"flex" ,flexDirection:"column" ,justifyContent:"center", gap:"1rem",color:"white"}}>
-            <li className='d-font-card-h2'>Contact</li>
-            <li className='d-font-card-p1-E4 flex gap-[0.5vw]'><IoMailOutline className='text-2xl pt-[0.3vw] hidden md:block' /><div >admin@geotech.com</div></li>
-            <li className='d-font-card-p1-E4 flex gap-[0.5vw]'><FiPhoneCall className='text-2xl pt-[0.3vw] hidden md:block' /><div >+805-72399999</div></li>
-            <li className='d-font-card-p1-E4 relative'><div className='md:pl-[2.5vw] pl-0'>Aeros Geotech Sdn. Bhd. 2A Lintang Maju 1/1 Taman Sarai Maju 134300 Bagan Serai Prak</div><GrLocation className='absolute top-[5%] text-lg hidden md:block'/></li>
+           <ul className='flex flex-col justify-center gap-[1rem]  '>
+            <li className='d-font-card-h2-E4'>Contact</li>
+            <li className='d-font-card-p1-E4 '><IoMailOutline className='inline' /> admin@geotech.com</li>
+            <li className='d-font-card-p1-E4 '><FiPhoneCall className='inline' /> +805-72399999</li>
+            <li className='d-font-card-p1-E4 max-w-[40vw]'><div className=''> <GrLocation className='inline'/> Aeros Geotech Sdn. Bhd. 2A Lintang Maju 1/1 Taman Sarai Maju 134300 Bagan Serai Prak</div></li>
             
           
            </ul>
         </div>
 
    {/* ----------------------------------Explore-------------------------------- */}     
-        <div className='max-w-1/4'>
+        <div className=' md:max-w-1/4'>
     
            <ul style={{display:"flex" ,flexDirection:"column" ,justifyContent:"center", gap:"1rem"}}>
-            <li className='d-font-card-h2'>Explore</li>
+            <li className='d-font-card-h2-E4'>Explore</li>
             <li className='d-font-card-p1-E4'>Home</li>
-            <li className='d-font-card-p1-E4 flex items-center gap-1'>Product<FaAngleDown/></li>
-            <li className='d-font-card-p1-E4 flex items-center gap-1'>Drone as Service<FaAngleDown/></li>
+            <li className='d-font-card-p1-E4  '>Product <FaAngleDown className='inline'/></li>
+            <li className='d-font-card-p1-E4  '>Drone as Service <FaAngleDown className='inline'/></li>
             <li className='d-font-card-p1-E4'>Blog</li>
             <li className='d-font-card-p1-E4'>About Us</li>
             <li className='d-font-card-p1-E4'>training</li>
@@ -60,10 +60,10 @@ const Footer = () => {
         </div>
 
    {/* ----------------------------------Support-------------------------------- */}
-        <div className='max-w-1/4'>
+        <div className='md:max-w-1/4'>
          
            <ul style={{display:"flex" ,flexDirection:"column" ,justifyContent:"center", gap:"1rem"}}>
-            <li className='d-font-card-h2'>Support</li>
+            <li className='d-font-card-h2-E4'>Support</li>
             <li className='d-font-card-p1-E4'>Support Desk</li>
             <li className='d-font-card-p1-E4'>Career</li>
             <li className='d-font-card-p1-E4'>FAQS</li>

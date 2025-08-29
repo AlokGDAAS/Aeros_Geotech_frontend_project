@@ -1,8 +1,13 @@
-import React from 'react'
+import React from "react";
+
 
 const Blog = () => {
+
+
   return (
-    <div>Blog </div>
+    <div className="h-[50vh]">
+
+    </div>
   )
 }
 
