@@ -64,7 +64,7 @@ const Home_frame_4 = () => {
            
           {/* ------------------------------------------------- */}
           <div>
-          <div className='flex flex-col md:flex-row md:flex-wrap gap-[2vw] '>
+          <div className='grid grid-cols-2 md:flex flex-col md:flex-row md:flex-wrap gap-[2vw] '>
             {
               content.map((item,index)=>(
                 <div key={index} className='md:min-w-[20%]'>

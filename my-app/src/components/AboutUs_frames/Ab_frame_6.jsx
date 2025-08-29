@@ -4,7 +4,7 @@ import { assets } from "../../assets/Home_frontend/assets";
 const Ab_frame_6 = () => {
   return (
     <div className="" style={{ backgroundColor: "#16242dff" }}>
-      <div className="flex flex-col md:flex-row py-[20vw] md:py-[6.94vw] md:px-[5vw] px-[10vw] justify-between relative">
+      <div className="flex flex-col md:flex-row py-[20vw] md:py-[7vw] md:px-[5vw] px-[10vw] justify-between relative">
         <div className="w-full flex flex-col justify-center text-center md:text-start pb-[8vw] md:pb-0">
           <p className="d-font-h md:pb-[1vw] py-[2vw] md:py-0 ">MISSION</p>
           <p className="d-font-p1">
@@ -27,7 +27,7 @@ const Ab_frame_6 = () => {
           />
         </div>
 
-            <div className='absolute md:top-[0] md:right-[0] top-[3vw] right-[35vw]'>
+            <div className='absolute md:top-[2%] md:left-[2%] top-[3vw] right-[35vw]'>
             <img src={assets.ab_frame_6_drone} alt='' className='max-w-[30vw]'/>
             </div>    
       </div>

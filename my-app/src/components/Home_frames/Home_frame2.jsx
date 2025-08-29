@@ -30,8 +30,11 @@ const Home_frame2 = () => {
   return (
     <div style={{position:"relative",background:"#111b22"}} className='py-[15vw] md:py-[0]'>
        <div style={{  color:"white", }} className='grid-container p-13vw lg:py-[13vh] px-[10vw]'>
-        <div>
+        <div className='relative'>
            <AboutUsCards image={card1.image} heading={card1.heading} paragraph={card1.paragraph} />
+            <div style={{position:"absolute", }} className='top-[-8%] left-[-8%] md:top-[-8%] md:left-[-8%]'>
+            <img src={assets.right_dotted_corner} alt='' />
+            </div>           
         </div>
         <div>
            <AboutUsCards image={card2.image} heading={card2.heading} paragraph={card2.paragraph} />
@@ -39,17 +42,16 @@ const Home_frame2 = () => {
         <div>
               <AboutUsCards image={card3.image} heading={card3.heading} paragraph={card3.paragraph} />
         </div>
-        <div>
+        <div className='relative'>
              <AboutUsCards image={card4.image} heading={card4.heading} paragraph={card4.paragraph} />
+            <div style={{position:"absolute",}} className='bottom-[-8%] right-[-8%] md:bottom-[-8%] md:right-[-8%]'>
+            <img src={assets.left_dotted_corner} alt=''/>
+            </div>             
         </div>
 
     </div>
-    <div style={{position:"absolute",}} className='bottom-[3%] right-[3.5%] md:bottom-[10%] md:right-[8%]'>
-     <img src={assets.left_dotted_corner} alt=''/>
-    </div>
-    <div style={{position:"absolute", }} className='top-[3%] left-[3.5%] md:top-[10%] md:left-[8%]'>
-     <img src={assets.right_dotted_corner} alt='' />
-    </div>
+
+
    </div> 
   )
 }

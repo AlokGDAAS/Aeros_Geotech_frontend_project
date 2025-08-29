@@ -52,6 +52,7 @@ const Home_frame_6 = () => {
                <div style={{position:"absolute"}} className='max-w-[16vw] md:top-[10%] md:left-[6%] top-[3%] left-[10%]'>
                <img src={assets.drone_frame_6} alt='' className='min-w-[20vw] md:min-w-[9vw]'/>
                </div> 
+
             </div>
   )
 }

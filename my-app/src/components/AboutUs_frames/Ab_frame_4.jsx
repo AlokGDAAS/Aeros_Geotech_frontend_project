@@ -3,7 +3,7 @@ import { assets } from "../../assets/Home_frontend/assets";
 
 const Ab_frame_4 = () => {
   return (
-    <div className="bg-[ #111b22d7] ">
+    <div className="bg-[ #111b22d7] relative">
        <div className="flex py-[6.94vw] px-[5vw] justify-between" >
         <div className="flex ">
         <div  style={{display:"flex", flexDirection:"column", justifyContent:"center",maxWidth:"80vw",margin:"0 auto"}}>
@@ -32,7 +32,9 @@ const Ab_frame_4 = () => {
 
         
        </div>
-
+                  <div className='absolute md:top-[4%] md:left-[2%] top-[4vh] left-[36vw] hidden md:block'>
+                   <img src={assets.ab_frame_4_drone} alt='' className='max-w-[25vw]'/>
+                  </div> 
     </div>
   );
 };
